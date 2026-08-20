@@ -1,52 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html, body {
+  background: #080a0d;
+}
+
 * {
+  font-family: 'Roboto Mono', monospace !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   align-items: center;
   text-align: center;
-}
-body {
-  background-color: #1d2021;
-}
-.main {
-  background-color: #282828;
-}
-.container {
-  max-width: 1600px;
-  min-height: 100vh;
-  margin: 0 auto;
-  background-color: #282828;
-  border-left: 1px solid #a89984;
-  border-right: 1px solid #a89984;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.top {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-h1 {
-  font-family: Georgia, serif;
-  font-size: 2rem;
-  color: #ebdbb2;
-}
-.bottom {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.stamps {
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+  
 }
 
-.middle {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
+img.whimsical {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  width: 10em;
+  height: 10em;
+  transform: translate(-50%, -50%);
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.top {
+  padding: 0.5em;
+  
+
+  transition: transform 8s cubic-bezier(0.19, 1, 0.22, 1);
+  display: inline-block;
+}
+
+.top:hover {
+  transform: rotate(-420deg) scale(0.6);
+}
+
+.clarification  {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
